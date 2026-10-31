@@ -1,0 +1,13 @@
+streamlit
+streamlit-mic-recorder
+google-genai
+SpeechRecognition
+gTTS
+python-dotenv
+markdown2
+beautifulsoup4
+pydub
+Pillow
+numpy
+edge-tts
+audio-recorder-streamlit

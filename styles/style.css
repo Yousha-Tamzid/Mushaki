@@ -1,0 +1,529 @@
+.stApp {
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(59, 130, 246, 0.12),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(139, 92, 246, 0.10),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #020617 0%,
+            #0f172a 50%,
+            #020617 100%
+        );
+}
+
+.block-container {
+    max-width: 1050px;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+header {
+    background: transparent !important;
+}
+
+section[data-testid="stSidebar"] {
+    background: rgba(2, 6, 23, 0.97);
+    border-right: 1px solid rgba(148, 163, 184, 0.10);
+}
+
+section[data-testid="stSidebar"] > div {
+    padding-top: 1.5rem;
+}
+
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span,
+section[data-testid="stSidebar"] label {
+    color: #e2e8f0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.top-header {
+    width: 100%;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    border-radius: 22px;
+    background: rgba(15, 23, 42, 0.72);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.25);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-logo-wrapper {
+    width: 62px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #1d4ed8, #4f46e5);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.20);
+}
+
+.header-logo {
+    width: 62px;
+    height: 62px;
+    object-fit: cover;
+    border-radius: 17px;
+}
+
+.header-title {
+    color: #f8fafc;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+}
+
+.header-subtitle {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 3px;
+}
+
+.header-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.20);
+    color: #86efac;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header-status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.85);
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+
+.sidebar-logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.sidebar-logo img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.22);
+}
+
+.sidebar-brand {
+    text-align: center;
+    color: #f8fafc;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.sidebar-description {
+    text-align: center;
+    color: #64748b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.sidebar-status {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 14px auto 18px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.08);
+    border: 1px solid rgba(34, 197, 94, 0.15);
+    color: #86efac;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sidebar-status-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 8px rgba(34, 197, 94, 0.8);
+}
+
+.chat-history-title {
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 18px 0 9px;
+}
+
+.sidebar-version {
+    text-align: center;
+    color: #475569;
+    font-size: 11px;
+    margin-top: 18px;
+}
+
+/* =========================
+   STATISTICS
+   ========================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.stat-card {
+    padding: 13px;
+    border-radius: 13px;
+    background: rgba(30, 41, 59, 0.50);
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    text-align: center;
+}
+
+.stat-value {
+    color: #f8fafc;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.stat-label {
+    color: #64748b;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+.stButton > button {
+    width: 100%;
+    min-height: 45px;
+    border-radius: 13px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    background: rgba(30, 41, 59, 0.72);
+    color: #e2e8f0;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    border-color: rgba(96, 165, 250, 0.55);
+    background: rgba(51, 65, 85, 0.88);
+    transform: translateY(-1px);
+}
+
+/* =========================
+   WELCOME
+   ========================= */
+
+.welcome-card {
+    width: 100%;
+    padding: 42px 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid rgba(148, 163, 184, 0.12);
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(59, 130, 246, 0.13),
+            transparent 45%
+        ),
+        rgba(15, 23, 42, 0.70);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.20);
+}
+
+.welcome-icon {
+    font-size: 42px !important;
+    line-height: 1 !important;
+    margin-bottom: 10px !important;
+}
+
+.welcome-title {
+    color: #f8fafc;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    max-width: 650px;
+    margin: auto;
+    color: #94a3b8;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.section-title {
+    color: #e2e8f0;
+    font-size: 15px;
+    font-weight: 700;
+    margin: 18px 0 10px;
+}
+
+/* =========================
+   CHAT
+   ========================= */
+
+.stChatMessage {
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.08);
+    background: rgba(15, 23, 42, 0.42);
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    text-align: center;
+    padding: 35px 0 10px;
+    color: #475569;
+    font-size: 12px;
+}
+
+/* =========================
+   FIXED CHAT INPUT BAR
+   ========================= */
+
+.st-key-chat_input_bar {
+    position: fixed;
+    left: 50%;
+    bottom: 18px;
+    transform: translateX(-50%);
+    width: min(1000px, calc(100vw - 40px));
+    z-index: 9999;
+    padding: 10px 12px;
+    border-radius: 18px;
+    background: rgba(18, 18, 22, 0.96);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+}
+
+.block-container {
+    padding-bottom: 110px !important;
+}
+
+/* =========================
+   TEXT INPUT
+   ========================= */
+
+.st-key-chat_input_bar [data-testid="stTextInput"] > div,
+.st-key-chat_input_bar [data-testid="stTextInput"] div[data-baseweb="input"] {
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+}
+
+.st-key-chat_input_bar [data-testid="stTextInput"] input {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================
+   SEND BUTTON
+   ========================= */
+
+.st-key-chat_input_bar [data-testid="stBaseButton-secondary"] {
+    min-height: 45px !important;
+    height: 45px !important;
+}
+
+.st-key-chat_input_bar button {
+    outline: none !important;
+}
+
+/* =========================
+   PERFECT MIC BUTTON MATCH
+   ========================= */
+
+.native-mic-btn {
+    width: 100%;
+    height: 45px;
+    min-height: 45px;
+    border-radius: 13px;
+    border: 1px solid rgba(148, 163, 184, 0.14);
+    background: rgba(30, 41, 59, 0.72);
+    color: #e2e8f0;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    padding: 0;
+    margin: 0;
+}
+
+.native-mic-btn:hover {
+    border-color: rgba(96, 165, 250, 0.55);
+    background: rgba(51, 65, 85, 0.88);
+    transform: translateY(-1px);
+}
+
+.native-mic-btn.recording {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.5);
+    color: #ef4444;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+}
+
+/* =========================
+   AUDIO RECORDER OVERRIDE
+   ========================= */
+
+/* mic container styling */
+div[data-testid="stCustomComponentV1"] {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    height: 45px !important;
+    min-height: 45px !important;
+}
+
+/* Force styling to audio recorder svg icon button */
+div[data-testid="stCustomComponentV1"] iframe {
+    height: 45px !important;
+    min-height: 45px !important;
+}
+
+/* Microhone container box to match send button */
+.st-key-chat_input_bar .stColumn:last-child {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+/* Dynamic Playing Microphone indicator */
+.playing-mic-btn {
+    width: 100%;
+    height: 45px;
+    min-height: 45px;
+    border-radius: 13px;
+    border: 1px solid rgba(59, 130, 246, 0.5);
+    background: rgba(30, 58, 138, 0.6);
+    color: #60a5fa;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    animation: pulse-border 1.2s infinite;
+}
+
+@keyframes pulse-border {
+    0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+    70% { box-shadow: 0 0 0 8px rgba(59, 130, 246, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+/* Mic Button Styling to match Send Button */
+div[data-element-id="native_mic_recorder"] button {
+    width: 100% !important;
+    height: 45px !important;
+    min-height: 45px !important;
+    border-radius: 13px !important;
+    border: 1px solid rgba(148, 163, 184, 0.14) !important;
+    background: rgba(30, 41, 59, 0.72) !important;
+    color: #e2e8f0 !important;
+    font-size: 16px !important;
+}
+
+div[data-element-id="native_mic_recorder"] button:hover {
+    border-color: rgba(96, 165, 250, 0.55) !important;
+    background: rgba(51, 65, 85, 0.88) !important;
+}
+
+/* Mic Recorder Component Styling Fix */
+iframe[title="streamlit_mic_recorder.mic_recorder"] {
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 8px !important;
+}
+
+iframe[title="streamlit_mic_recorder.mic_recorder"] button {
+    background-color: #1e293b !important;
+    color: #ffffff !important;
+    border: 1px solid #334155 !important;
+    border-radius: 8px !important;
+}
+
+/* Prevent white box flicker on mic re-render */
+iframe[title="streamlit_mic_recorder.mic_recorder"] {
+    background-color: transparent !important;
+    background: transparent !important;
+    border: none !important;
+    color-scheme: dark !important;
+}
+
+/* Force dark theme inside component container */
+div[data-testid="stCustomComponentV1"] {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+iframe[title="streamlit_mic_recorder.mic_recorder"] html,
+iframe[title="streamlit_mic_recorder.mic_recorder"] body {
+    background-color: transparent !important;
+}
+
+/* Popover button size fix to match send button */
+.st-key-chat_input_bar div[data-testid="stPopover"] > button {
+    min-height: 45px !important;
+    height: 45px !important;
+    border-radius: 13px !important;
+    border: 1px solid rgba(148, 163, 184, 0.14) !important;
+    background: rgba(30, 41, 59, 0.72) !important;
+    color: #e2e8f0 !important;
+}
+
+.st-key-chat_input_bar div[data-testid="stPopover"] > button:hover {
+    border-color: rgba(96, 165, 250, 0.55) !important;
+    background: rgba(51, 65, 85, 0.88) !important;
+}
